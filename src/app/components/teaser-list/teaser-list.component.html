@@ -1,0 +1,8 @@
+<div *ngIf="teasers">
+	<ul>
+		<li *ngFor="let teaser of teasers | async">
+			<p>{{ teaser.name }}</p>
+			<p>{{ teaser.author }}</p>
+		</li>
+	</ul>
+</div>

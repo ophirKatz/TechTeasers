@@ -1,0 +1,34 @@
+[
+	{
+		"id": "1",
+		"name": "AngularJS Intro",
+		"author": "Ophir Katz",
+		"topics": [
+			"web", "angular"
+		]
+	},
+	{
+		"id": "2",
+		"name": "NestJS in a nutshell",
+		"author": "Ophir Katz",
+		"topics": [
+			"web", "node", "server"
+		]
+	},
+	{
+		"id": "3",
+		"name": "RxJs",
+		"author": "Ophir Katz",
+		"topics": [
+			"web", "reactive"
+		]
+	},
+	{
+		"id": "4",
+		"name": "State management",
+		"author": "Ophir Katz",
+		"topics": [
+			"web", "ngrx"
+		]
+	}
+]
