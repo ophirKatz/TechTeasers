@@ -17,6 +17,7 @@ export class TeaserEffects {
 		ofType(teaserActions.loadTeasers),
 		switchMap(() => {
 			return this.teaserService.fetchTeasers().pipe(
+				// TODO : Check in store if data is loaded. If so, dont reload from service.
 				map((teasers: Teaser[]) => teaserActions.loadTeasersComplete({teasers})),
 				catchError(error => of(teaserActions.loadTeasersFailed({error})))
 			);

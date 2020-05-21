@@ -23,8 +23,8 @@ import { EntityDataModule } from '@ngrx/data';
   ],
   imports: [
     CommonModule,
-    EffectsModule.forFeature(fromTeaserStore.teaserEffects),
     StoreModule.forFeature('teasers', fromTeaserStore.reducer),
+    EffectsModule.forFeature(fromTeaserStore.teaserEffects),
     // EntityDataModule.forRoot(entityConfig),
     HttpClientModule
   ],

@@ -13,12 +13,11 @@ import { Store } from '@ngrx/store';
   styleUrls: ['./teaser-list.component.css']
 })
 export class TeaserListComponent implements OnInit {
-  public teasers: Observable<Teaser[]>;
+  public teasers: Observable<Teaser[]> = this.store.select(fromTeaserStore.TeaserSelectors.allTeasers);
 
   constructor(private store: Store<TeasersState>) { }
 
   ngOnInit(): void {
-    // this.teasers = this.teaserService.fetchTeasers();
     this.store.dispatch(fromTeaserStore.TeaserActions.loadTeasers());
   }
 }
